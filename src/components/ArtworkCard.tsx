@@ -54,14 +54,8 @@ export default function ArtworkCard({ item, index }: ArtworkCardProps) {
 
     return (
         <div ref={cardRef} className="artwork-card">
-            <div className="card-grain"></div>
             <div className="card-glow"></div>
-            <div className="decoration-blob"></div>
             <div className="preview-box">
-                <div className="corner-bracket br-tl"></div>
-                <div className="corner-bracket br-tr"></div>
-                <div className="corner-bracket br-bl"></div>
-                <div className="corner-bracket br-br"></div>
                 <div className="thumb-area">
                     <img 
                         src={`/images/${item.id}.jpg`} 
@@ -84,7 +78,6 @@ export default function ArtworkCard({ item, index }: ArtworkCardProps) {
                 </div>
             </div>
             <div className="card-info">
-                <div className="info-bg-shape"></div>
                 <span className="card-series">{item.series || 'Art Portfolio'}</span>
                 <h3 className="card-title">{item.title || 'Untitled'}</h3>
                 <div className="card-meta">

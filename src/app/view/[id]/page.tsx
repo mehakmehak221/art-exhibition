@@ -18,83 +18,48 @@ interface PageProps {
     params: Promise<{ id: string }>;
 }
 
-// Module-level cache to keep data across page navigations
-let cachedData: Artwork[] | null = null;
-
 export default function ArtworkDetail({ params: paramsPromise }: PageProps) {
     const params = use(paramsPromise);
     const id = params.id;
-    const [artwork, setArtwork] = useState<Artwork | null>(() => {
-        // Find synchronously if we have cached data
-        if (cachedData) {
-            return cachedData.find(a => a.id === id) || null;
-        }
-        return null;
-    });
-    
-    const [nav, setNav] = useState(() => {
-        if (cachedData) {
-            const index = cachedData.findIndex(a => a.id === id);
-            if (index !== -1) {
-                const prevIdx = (index - 1 + cachedData.length) % cachedData.length;
-                const nextIdx = (index + 1) % cachedData.length;
-                return {
-                    prev: cachedData[prevIdx].id,
-                    next: cachedData[nextIdx].id,
-                    current: index + 1,
-                    total: cachedData.length
-                };
-            }
-        }
-        return { prev: '', next: '', current: 0, total: 0 };
-    });
-
+    const [artwork, setArtwork] = useState<Artwork | null>(null);
+    const [nav, setNav] = useState({ prev: '', next: '', current: 0, total: 0 });
     const cardRef = useRef<HTMLDivElement>(null);
     const router = useRouter();
 
     useEffect(() => {
-        const handleData = (data: Artwork[]) => {
-            const index = data.findIndex((a: Artwork) => a.id === id);
-            if (index === -1) {
-                router.push('/');
-                return;
-            }
-            
-            setArtwork(data[index]);
-            
-            const prevIdx = (index - 1 + data.length) % data.length;
-            const nextIdx = (index + 1) % data.length;
-            
-            setNav({
-                prev: data[prevIdx].id,
-                next: data[nextIdx].id,
-                current: index + 1,
-                total: data.length
-            });
-        };
-
-        if (cachedData) {
-            handleData(cachedData);
-        } else {
-            fetch('/data.json')
-                .then(res => res.json())
-                .then((data: Artwork[]) => {
-                    cachedData = data;
-                    handleData(data);
-                })
-                .catch(err => console.error("Error loading artwork:", err));
-        }
+        fetch('/data.json')
+            .then(res => res.json())
+            .then((data: Artwork[]) => {
+                const index = data.findIndex((a: Artwork) => a.id === id);
+                if (index === -1) {
+                    router.push('/');
+                    return;
+                }
+                
+                setArtwork(data[index]);
+                
+                // Calculate Next/Prev with looping logic
+                const prevIdx = (index - 1 + data.length) % data.length;
+                const nextIdx = (index + 1) % data.length;
+                
+                setNav({
+                    prev: data[prevIdx].id,
+                    next: data[nextIdx].id,
+                    current: index + 1,
+                    total: data.length
+                });
+            })
+            .catch(err => console.error("Error loading artwork:", err));
     }, [id, router]);
 
     useEffect(() => {
         const card = cardRef.current;
         if (artwork && card) {
-            // Sharper transition for 'instant' feel
-            gsap.set(card, { opacity: 0 });
             gsap.to(card, {
                 opacity: 1,
-                duration: 0.3,
-                ease: "power2.out"
+                y: 0,
+                duration: 1.2,
+                ease: "power4.out"
             });
         }
     }, [artwork]);
@@ -177,12 +142,6 @@ export default function ArtworkDetail({ params: paramsPromise }: PageProps) {
                         </Link>
                     </div>
                 </div>
-            </div>
-
-            {/* Invisible Preloader for Instant Images */}
-            <div style={{ display: 'none' }} aria-hidden="true">
-                {nav.prev && <img src={`/images/${nav.prev}.jpg`} alt="" />}
-                {nav.next && <img src={`/images/${nav.next}.jpg`} alt="" />}
             </div>
         </main>
     );
