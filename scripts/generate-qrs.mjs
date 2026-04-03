@@ -20,7 +20,7 @@ async function generateQRs() {
         console.log(`Starting QR generation for ${artworks.length} artworks...`);
 
         for (const item of artworks) {
-            const cleanTitle = (item.title || 'Untitled').replace(/[^a-z0-9]/gi, '_').toLowerCase();
+            const cleanTitle = (item.title || 'Untitled').replace(/[^a-z0-9]/gi, '_');
             const fileName = `${item.id}_${cleanTitle}.png`;
             const filePath = path.join(OUTPUT_DIR, fileName);
             const targetUrl = `${BASE_URL}${item.id}`;

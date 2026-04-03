@@ -23,7 +23,7 @@ interface ArtworkCardProps {
 
 export default function ArtworkCard({ item, index }: ArtworkCardProps) {
     const cardRef = useRef<HTMLDivElement>(null);
-    const cleanTitle = (item.title || 'Untitled').replace(/[^a-z0-9]/gi, '_').toLowerCase();
+    const cleanTitle = (item.title || 'Untitled').replace(/[^a-z0-9]/gi, '_');
     const qrPath = `/qrs/${item.id}_${cleanTitle}.png`;
 
     useEffect(() => {
