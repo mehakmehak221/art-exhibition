@@ -1,0 +1,704 @@
+[
+  {
+    "id": "01",
+    "series": "Life Theatre",
+    "title": "The Prismatic",
+    "year": "2025",
+    "medium": "Oil Paint On Canvas",
+    "size": "60 x 72 Inches"
+  },
+  {
+    "id": "02",
+    "series": "Lila, The Eternal Play",
+    "title": "The First Act",
+    "year": "2022",
+    "medium": "Oil Paint On Canvas",
+    "size": "60 x 72 Inches"
+  },
+  {
+    "id": "03",
+    "series": "Life Theatre",
+    "title": "Closure Room",
+    "year": "2025",
+    "medium": "Oil Paint On Canvas",
+    "size": "60 x 72 Inches"
+  },
+  {
+    "id": "04",
+    "series": "Antaraal - The Gap",
+    "title": "Recall",
+    "year": "2022",
+    "medium": "Acrylic On Canvas",
+    "size": "60 x 48 Inches"
+  },
+  {
+    "id": "05",
+    "series": "The Lapse of Time",
+    "title": "Moon bowl",
+    "year": "2022",
+    "medium": "Oil On Canvas",
+    "size": "22.5 × 15 Inches"
+  },
+  {
+    "id": "06",
+    "series": "Antaraal — The Gap",
+    "title": "Throb",
+    "year": "2022",
+    "medium": "Acrylic On Canvas",
+    "size": "48 x 36 Inches"
+  },
+  {
+    "id": "07",
+    "series": "The Little One's Diary",
+    "title": "The Secret",
+    "year": "2022",
+    "medium": "Oil Paint On Canvas",
+    "size": "48 x 60 Inches"
+  },
+  {
+    "id": "08",
+    "series": "Antaraal - The Gap",
+    "title": "Setting Of The Night",
+    "year": "2022",
+    "medium": "Oil Paint On Canvas",
+    "size": "48 x 60 Inches"
+  },
+  {
+    "id": "09",
+    "series": "As They Appear",
+    "title": "The Spell",
+    "year": "2023",
+    "medium": "Oil Paint On Canvas",
+    "size": "48 x 36 Inches"
+  },
+  {
+    "id": "10",
+    "series": "The Little One's Diary",
+    "title": "Promise",
+    "year": "2022",
+    "medium": "Oil Paint On Canvas",
+    "size": "48 x 36 Inches"
+  },
+  {
+    "id": "11",
+    "series": "Antaraal - The Gap",
+    "title": "Drift",
+    "year": "2022",
+    "medium": "Acrylic On Canvas",
+    "size": "46 x 36 Inches"
+  },
+  {
+    "id": "12",
+    "series": "The Ark",
+    "title": "Presence In Absence",
+    "year": "2024",
+    "medium": "Oil Paint On Canvas",
+    "size": "36 x 48 Inches"
+  },
+  {
+    "id": "13",
+    "series": "Small Color Stories",
+    "title": "Purple Between Them",
+    "year": "2023",
+    "medium": "Watercolor On Paper",
+    "size": "23 x 33 Inches"
+  },
+  {
+    "id": "14",
+    "series": "Life Theatre",
+    "title": "Traces",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "15",
+    "series": "Life Theatre",
+    "title": "Disapperences",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "16",
+    "series": "Life Theatre",
+    "title": "Life, Between Acts",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "17",
+    "series": "Life Theatre",
+    "title": "Wind Blown",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "18",
+    "series": "Life Theatre",
+    "title": "Overlap",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "19",
+    "series": "Life Theatre",
+    "title": "What the fire could not silence",
+    "year": "2026",
+    "medium": "Pastels on Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "20",
+    "series": "Symptoms of Light",
+    "title": "Rendered Visible",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "21",
+    "series": "Symptoms Of Light",
+    "title": "Buzz",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "22",
+    "series": "Signs of Affirmation",
+    "title": "What Refuses to Fade",
+    "year": "2022",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 inches"
+  },
+  {
+    "id": "23",
+    "series": "Signs Of Affirmation",
+    "title": "Listening Whispers",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 inches"
+  },
+  {
+    "id": "24",
+    "series": "The Lapse Of Time",
+    "title": "Red Hour",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "25",
+    "series": "The Lapse of Time",
+    "title": "Gallery On The Mound",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "26",
+    "series": "The Withdrawn And The Ecstatic",
+    "title": "The Player",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "27",
+    "series": "The Withdrawn and The Ecstatic",
+    "title": "Unelapsed",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "28",
+    "series": "Effects of the Restraints",
+    "title": "Outside the Blocks",
+    "year": "2025",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "29",
+    "series": "The Listening Earth",
+    "title": "The Season",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "30",
+    "series": "The Withdrawn And The Ecstatic",
+    "title": "Trance Of The Wounded",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "31",
+    "series": "The Listening Earth",
+    "title": "Ancestral Crossing",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "32",
+    "series": "Ways Of The Breathless",
+    "title": "Homage",
+    "year": "2025",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "33",
+    "series": "The Listening Earth",
+    "title": "The Celestials' Lake",
+    "year": "2025",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "34",
+    "series": "Life Theatre",
+    "title": "Tapish, The Lingering Warmth",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "35",
+    "series": "Life Theatre",
+    "title": "The Vivid Dreamers",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "36",
+    "series": "The Lapse Of Time",
+    "title": "The Portal",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "37",
+    "series": "The Withdrawn And The Ecstatic",
+    "title": "Sangha",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "38",
+    "series": "Life Theatre",
+    "title": "Soaked",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "39",
+    "series": "Life Theatre",
+    "title": "The Wait",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "40",
+    "series": "Life Theatre",
+    "title": "New Moon Act",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "41",
+    "series": "Traces at The Threshold",
+    "title": "The Attending Silence",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "42",
+    "series": "Life Theatre",
+    "title": "Dance Of Cocoons",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "22 x 30 Inches"
+  },
+  {
+    "id": "43",
+    "series": "The Withdrawn And The Ecstatic",
+    "title": "Ancestor",
+    "year": "2025",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "30 x 22 Inches"
+  },
+  {
+    "id": "44",
+    "series": "The Listening Earth",
+    "title": "Hours Gone By",
+    "year": "2026",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "30 x 22 Inches"
+  },
+  {
+    "id": "45",
+    "series": "The Listening Earth",
+    "title": "The Angel's Nook",
+    "year": "2025",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "30 x 22 Inches"
+  },
+  {
+    "id": "46",
+    "series": "The Listening Earth",
+    "title": "The Seer's Rite",
+    "year": "2025",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "30 x 22 Inches"
+  },
+  {
+    "id": "47",
+    "series": "The Listening Earth",
+    "title": "Passing Light",
+    "year": "2025",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "30 x 22 Inches"
+  },
+  {
+    "id": "48",
+    "series": "The Listening Earth",
+    "title": "Congress Of The Hearts",
+    "year": "2025",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "30 x 22 Inches"
+  },
+  {
+    "id": "49",
+    "series": "Ways Of The Breathless",
+    "title": "The Promise",
+    "year": "2026",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "30 x 22 Inches"
+  },
+  {
+    "id": "50",
+    "series": "Life Theatre",
+    "title": "The Sovereign’s Gaze",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "30 x 22 Inches"
+  },
+  {
+    "id": "51",
+    "series": "Lapse Of Time",
+    "title": "The Memory Room",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "30 x 22 Inches"
+  },
+  {
+    "id": "52",
+    "series": "Life Theatre",
+    "title": "The long dream of dwelling",
+    "year": "2021",
+    "medium": "Pastels on Paper",
+    "size": "12 × 11 Inches"
+  },
+  {
+    "id": "53",
+    "series": "Symptoms Of Light",
+    "title": "Abode - 3",
+    "year": "2020",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16.5 x 11.6 inches"
+  },
+  {
+    "id": "54",
+    "series": "Signs of Affirmation",
+    "title": "Home Coming - 4",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16.5 x 11.6 Inches"
+  },
+  {
+    "id": "55",
+    "series": "Dream Line",
+    "title": "Magic Board",
+    "year": "2022",
+    "medium": "Watercolor On Paper",
+    "size": "16 x 12 Inches"
+  },
+  {
+    "id": "56",
+    "series": "Effects Of The Restraints",
+    "title": "Stirring",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 12 Inches"
+  },
+  {
+    "id": "57",
+    "series": "Effects Of The Restraints",
+    "title": "Reality Check",
+    "year": "2020",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 12 Inches"
+  },
+  {
+    "id": "58",
+    "series": "Effects Of The Restraints",
+    "title": "Infinity Gaze",
+    "year": "2020",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 12 Inches"
+  },
+  {
+    "id": "59",
+    "series": "Ways Of The Breathless",
+    "title": "First Step",
+    "year": "2020",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 12 Inches"
+  },
+  {
+    "id": "60",
+    "series": "Struggles With Stillness",
+    "title": "The Room That Learns You",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 12 Inches"
+  },
+  {
+    "id": "61",
+    "series": "Struggles With Stillness",
+    "title": "Held, Beheld",
+    "year": "2020",
+    "medium": "Mixed Media On Paper",
+    "size": "16 x 12 Inches"
+  },
+  {
+    "id": "62",
+    "series": "The Withdrawn And The Ecstatic",
+    "title": "Ritambharā — The Truth Bearing",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 12 Inches"
+  },
+  {
+    "id": "63",
+    "series": "Symptoms Of Light",
+    "title": "Abode - 1",
+    "year": "2022",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 11.8 Inches"
+  },
+  {
+    "id": "64",
+    "series": "Signs Of Affirmation",
+    "title": "Beneath The Archway",
+    "year": "2022",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 11.5 Inches"
+  },
+  {
+    "id": "65",
+    "series": "Lapse Of Time",
+    "title": "Awake",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 11.6 Inches"
+  },
+  {
+    "id": "66",
+    "series": "Struggles With Stillness",
+    "title": "The Quiet",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 11.6 inches"
+  },
+  {
+    "id": "67",
+    "series": "Struggles With Stillness",
+    "title": "Caress",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "16 x 11.8 Inches"
+  },
+  {
+    "id": "68",
+    "series": "Dream Line",
+    "title": "The Other Half",
+    "year": "2022",
+    "medium": "Watercolor On Paper",
+    "size": "15 x 11.5 Inches"
+  },
+  {
+    "id": "69",
+    "series": "Ways Of The Breathless",
+    "title": "Meeting Rooms",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "15.5 x 11.6 Inches"
+  },
+  {
+    "id": "70",
+    "series": "Lapse Of Time",
+    "title": "Hermit's Ease",
+    "year": "2022",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "15.9 x 11.6 Inches"
+  },
+  {
+    "id": "71",
+    "series": "Sightings And Disappearances",
+    "title": "Scenes At The Ghat - 6",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "11 1/4 x 12 1/2 Inches"
+  },
+  {
+    "id": "72",
+    "series": "Dream Line",
+    "title": "The Key",
+    "year": "2022",
+    "medium": "Watercolor On Paper",
+    "size": "12 x 16 Inches"
+  },
+  {
+    "id": "73",
+    "series": "Symptoms Of Light",
+    "title": "Sunrise Along The Banks - 2",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "12 x 16 Inches"
+  },
+  {
+    "id": "74",
+    "series": "Sightings And Disappearances",
+    "title": "Bone Already Knows",
+    "year": "2020",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "12 x 16 Inches"
+  },
+  {
+    "id": "75",
+    "series": "Symptoms of Light",
+    "title": "The oracle",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal and Pencil on Fabriano Paper",
+    "size": "11 1/4 × 12 1/2 Inches"
+  },
+  {
+    "id": "76",
+    "series": "The Lapse Of Time",
+    "title": "Rest",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "11.6 x 16.5 Inches"
+  },
+  {
+    "id": "77",
+    "series": "The Withdrawn And The Ecstatic",
+    "title": "Dance With The Beloved",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "11 x 15 Inches"
+  },
+  {
+    "id": "78",
+    "series": "The Withdrawn And The Ecstatic",
+    "title": "Lab",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "11.6 x 16 Inches"
+  },
+  {
+    "id": "79",
+    "series": "The Withdrawn And The Ecstatic",
+    "title": "A Walk By The Sky",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "11.8 x 16 Inches"
+  },
+  {
+    "id": "80",
+    "series": "Sightings and Disappearances",
+    "title": "Residents",
+    "year": "2023",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "11.6 x 16 Inches"
+  },
+  {
+    "id": "81",
+    "series": "Sightings and Disappearance",
+    "title": "In A Silent Way",
+    "year": "2021",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "11.6 x 16.5 Inches"
+  },
+  {
+    "id": "82",
+    "series": "Life Theatre",
+    "title": "The Park",
+    "year": "2024",
+    "medium": "Dry Pastel, Charcoal And Pencil On Paper",
+    "size": "11 1/4 x 12 1/2 Inches"
+  },
+  {
+    "id": "83",
+    "title": "Aradhya",
+    "series": "Shoonya",
+    "year": "2019",
+    "medium": "Bronze",
+    "size": "35 Inches"
+  },
+  {
+    "id": "84",
+    "title": "Niruddha",
+    "series": "Shoonya",
+    "year": "2019",
+    "medium": "Bronze",
+    "size": "58 Inches"
+  },
+  {
+    "id": "85",
+    "title": "Sarthak",
+    "series": "Shoonya",
+    "year": "2019",
+    "medium": "Bronze",
+    "size": "49 Inches"
+  },
+  {
+    "id": "86",
+    "title": "Ekaagara",
+    "series": "Shoonya",
+    "year": "2019",
+    "medium": "Bronze",
+    "size": "36 Inches"
+  },
+  {
+    "id": "87",
+    "title": "Anila (AH-Nee-Lah) — Sanskrit",
+    "year": "2025",
+    "medium": "Teak Wood",
+    "size": "42x20x18 Inches"
+  },
+  {
+    "id": "88",
+    "title": "Rei (RAY) — Japanese",
+    "year": "2025",
+    "medium": "Teak Wood",
+    "size": "39x19x17 Inches"
+  }
+]
