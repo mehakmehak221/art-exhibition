@@ -694,7 +694,7 @@ a {
     width: 100%;
     max-width: 220px;
     object-fit: contain;
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.06));
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.06));
 }
 
 /* Card Content */
@@ -1061,6 +1061,11 @@ a {
 
 /* 1024px – Tablets landscape */
 @media (max-width: 1024px) {
+    .hero {
+        min-height: auto;
+        padding: calc(var(--nav-h) + 80px) clamp(20px, 5vw, 60px) 140px;
+    }
+
     .tracing-beam {
         left: 20px;
     }
@@ -1133,7 +1138,8 @@ a {
     }
 
     .hero {
-        padding: calc(var(--nav-h) + 24px) 20px 60px;
+        min-height: auto;
+        padding: calc(var(--nav-h) + 40px) 20px 100px;
     }
 
     .hero-stats {
