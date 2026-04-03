@@ -32,61 +32,23 @@ export default function ArtworkCard({ item, index }: ArtworkCardProps) {
 
         // Entry Animation
         gsap.fromTo(card, 
-            { opacity: 0, y: 40, rotateX: -5 },
+            { opacity: 0, y: 20 },
             {
                 opacity: 1,
                 y: 0,
-                rotateX: 0,
-                duration: 1.4,
-                ease: "power4.out",
+                duration: 0.8,
+                ease: "power2.out",
                 scrollTrigger: {
                     trigger: card,
                     start: "top bottom-=100",
                     toggleActions: "play none none none"
                 },
-                delay: (index % 3) * 0.1
+                delay: (index % 3) * 0.05
             }
         );
 
-        // Hover & Interaction
-        const handleMouseMove = (e: MouseEvent) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            
-            card.style.setProperty('--mouse-x', `${x}px`);
-            card.style.setProperty('--mouse-y', `${y}px`);
-
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateX = (centerY - y) / 12; // More subtle
-            const rotateY = (x - centerX) / 12;
-
-            gsap.to(card, {
-                rotationX: rotateX,
-                rotationY: rotateY,
-                scale: 1.02,
-                duration: 0.4,
-                ease: "power2.out"
-            });
-        };
-
-        const handleMouseLeave = () => {
-            gsap.to(card, {
-                rotationX: 0,
-                rotationY: 0,
-                scale: 1,
-                duration: 1,
-                ease: "elastic.out(1, 0.4)"
-            });
-        };
-
-        card.addEventListener('mousemove', handleMouseMove);
-        card.addEventListener('mouseleave', handleMouseLeave);
-
         return () => {
-            card.removeEventListener('mousemove', handleMouseMove);
-            card.removeEventListener('mouseleave', handleMouseLeave);
+            gsap.killTweensOf(card);
         };
     }, [index]);
 
