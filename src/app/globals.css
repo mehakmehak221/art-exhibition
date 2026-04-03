@@ -616,8 +616,8 @@ a {
     position: relative;
     background: var(--bg-surface);
     border: 1px solid var(--glass-border);
-    border-radius: 24px;
-    padding: 22px;
+    border-radius: 28px;
+    padding: 24px;
     overflow: hidden;
     transition: box-shadow 0.6s var(--ease-expo), transform 0.6s var(--ease-expo);
     transform-style: preserve-3d;
@@ -627,9 +627,66 @@ a {
     will-change: transform;
 }
 
+.artwork-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13, 148, 136, 0.03) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
 .artwork-card:hover {
-    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.12);
-    transform: translateY(-8px) !important;
+    box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.08), 0 10px 30px -10px rgba(13, 148, 136, 0.05);
+    transform: translateY(-12px) !important;
+}
+
+/* Premium Grain Texture */
+.card-grain {
+    position: absolute;
+    inset: 0;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjAwIDIwMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48ZmlsdGVyIGlkPSdub2lzZSc+PGZlVHVyYnVsZW5jZSB0eXBlPSdmcmFjdGFsTm9pc2UnIGJhc2VGcmVxdWVuY3k9JzAuNScgbnVtT2N0YXZlcz0nMycgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNub2lzZSknIG9wYWNpdHk9JzAuMDUnLz48L3N2Zz4=');
+    pointer-events: none;
+    z-index: 5;
+    opacity: 0.4;
+}
+
+/* Floating Geometric Accents */
+.decoration-blob {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, var(--accent-vibrant-light) 0%, transparent 70%);
+    filter: blur(40px);
+    opacity: 0;
+    transition: opacity 1s var(--ease-expo), transform 1s var(--ease-expo);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.artwork-card:hover .decoration-blob {
+    opacity: 0.6;
+    transform: translate(-20px, 20px);
+}
+
+.info-bg-shape {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(13, 148, 136, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    transform: scale(0.8);
+    transition: transform 0.8s var(--ease-expo);
+}
+
+.artwork-card:hover .info-bg-shape {
+    transform: scale(1.5);
 }
 
 /* Mouse-following spotlight */
@@ -653,10 +710,34 @@ a {
     position: relative;
     height: clamp(220px, 28vw, 320px);
     background: var(--bg-muted);
-    border-radius: 16px;
+    border-radius: 18px;
     overflow: hidden;
-    margin-bottom: 20px;
-    z-index: 1;
+    margin-bottom: 24px;
+    z-index: 2;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+/* Corner Brackets */
+.corner-bracket {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.5s var(--ease-expo);
+    pointer-events: none;
+}
+
+.br-tl { top: 12px; left: 12px; border-right: 0; border-bottom: 0; }
+.br-tr { top: 12px; right: 12px; border-left: 0; border-bottom: 0; }
+.br-bl { bottom: 12px; left: 12px; border-right: 0; border-top: 0; }
+.br-br { bottom: 12px; right: 12px; border-left: 0; border-top: 0; }
+
+.artwork-card:hover .corner-bracket {
+    opacity: 1;
+    transform: scale(1.1);
+    border-color: var(--accent-vibrant);
 }
 
 .thumb-area {
@@ -706,46 +787,51 @@ a {
 
 .card-series {
     display: block;
-    font-size: 0.58rem;
+    font-size: 0.55rem;
     font-weight: 800;
-    letter-spacing: 2.5px;
+    letter-spacing: 4px; /* Increased for premium look */
     text-transform: uppercase;
     color: var(--accent-vibrant);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    opacity: 0.9;
 }
 
 .card-title {
-    font-size: clamp(1rem, 1.8vw, 1.3rem);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
     font-weight: 700;
     color: var(--accent-primary);
-    margin-bottom: 14px;
-    line-height: 1.2;
+    margin-bottom: 18px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
 }
 
 .card-meta {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .meta-item {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 4px;
 }
 
 .meta-label {
-    font-size: 0.53rem;
+    font-size: 0.5rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: var(--accent-secondary);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .meta-value {
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     font-weight: 700;
     color: var(--accent-primary);
+    letter-spacing: -0.01em;
 }
 
 /* Card Buttons */
