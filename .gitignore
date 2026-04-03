@@ -40,5 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# artwork (too large for standard git push)
-/public/images/
+# artwork (Git LFS or CDN recommended for large collections)
+# /public/images/
