@@ -42,7 +42,6 @@ export default function ArtworkDetail({ params: paramsPromise }: PageProps) {
     });
 
     const [lightbox, setLightbox] = useState(false);
-    const [lightboxSrc, setLightboxSrc] = useState('');
 
     const cardRef = useRef<HTMLDivElement>(null);
     const router = useRouter();
@@ -85,7 +84,7 @@ export default function ArtworkDetail({ params: paramsPromise }: PageProps) {
     useEffect(() => {
         document.body.style.overflow = lightbox ? 'hidden' : '';
         return () => { document.body.style.overflow = ''; };
-    }, [lightbox]);
+    }, []);
 
     if (!artwork) return null;
 
@@ -98,11 +97,6 @@ export default function ArtworkDetail({ params: paramsPromise }: PageProps) {
         else                             t.src = 'https://placehold.co/800x800/f9f9f9/ddd?text=Coming+Soon';
     };
 
-    const openLightbox = (e: React.MouseEvent<HTMLImageElement>) => {
-        setLightboxSrc(e.currentTarget.src);
-        setLightbox(true);
-    };
-
     return (
         <main className="detail-container">
             <div ref={cardRef} className="detail-card">
@@ -112,8 +106,6 @@ export default function ArtworkDetail({ params: paramsPromise }: PageProps) {
                     <img
                         src={`${baseImagePath}.jpg`}
                         alt={artwork.title}
-                        style={{ cursor: 'zoom-in' }}
-                        onClick={openLightbox}
                         onError={handleImgError}
                     />
                 </div>
@@ -175,49 +167,6 @@ export default function ArtworkDetail({ params: paramsPromise }: PageProps) {
                     </div>
                 </div>
             </div>
-
-            {/* ── Fullscreen Lightbox ── */}
-            {lightbox && (
-                <div
-                    onClick={() => setLightbox(false)}
-                    style={{
-                        position: 'fixed', inset: 0, zIndex: 9999,
-                        background: 'rgba(0,0,0,0.96)',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        cursor: 'zoom-out',
-                        animation: 'lbFadeIn 0.22s ease',
-                    }}
-                >
-                    <img
-                        src={lightboxSrc}
-                        alt={artwork.title}
-                        onClick={e => e.stopPropagation()}
-                        style={{
-                            maxWidth: '95vw', maxHeight: '95vh',
-                            objectFit: 'contain',
-                            borderRadius: '3px',
-                            boxShadow: '0 0 80px rgba(0,0,0,0.7)',
-                            cursor: 'default',
-                        }}
-                    />
-                    <button
-                        onClick={() => setLightbox(false)}
-                        aria-label="Close"
-                        style={{
-                            position: 'fixed', top: '1rem', right: '1rem',
-                            background: 'rgba(255,255,255,0.1)',
-                            border: '1px solid rgba(255,255,255,0.15)',
-                            backdropFilter: 'blur(10px)',
-                            color: '#fff', width: '2.5rem', height: '2.5rem',
-                            borderRadius: '50%', fontSize: '1.1rem',
-                            cursor: 'pointer',
-                            display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        }}
-                    >✕</button>
-                </div>
-            )}
-
-            <style>{`@keyframes lbFadeIn { from { opacity:0 } to { opacity:1 } }`}</style>
 
             {/* Preloader */}
             <div style={{ display: 'none' }} aria-hidden="true">

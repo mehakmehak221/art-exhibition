@@ -849,7 +849,6 @@ a {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: var(--nav-h);
     position: relative;
     border-radius: 20px;
     margin-bottom: 2rem;
