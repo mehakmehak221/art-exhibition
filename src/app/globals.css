@@ -18,7 +18,6 @@
     --nav-h: 76px;
 }
 
-/* ── RESET ──────────────────────────────────────────── */
 *,
 *::before,
 *::after {
@@ -50,7 +49,6 @@ a {
     color: inherit;
 }
 
-/* ── NEURAL CANVAS BACKGROUND ───────────────────────── */
 .canvas-container {
     position: fixed;
     inset: 0;
@@ -822,7 +820,7 @@ a {
 
 .detail-container {
     margin: 0;
-    padding: 0;
+    padding: calc(var(--nav-h) + 1rem) 0 0;
     min-height: 100svh;
     background: #fafaf9;
     display: block;
@@ -843,25 +841,22 @@ a {
 
 .artwork-image-container {
     width: 100%;
-    max-height: 85vh;
     background: #f8f8f8;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    border-radius: 20px;
+    border-radius: 0;
     margin-bottom: 2rem;
 }
 
 .artwork-image-container img {
     width: 100%;
-    height: 100%;
-    max-height: 90vh;
+    height: auto;
     object-fit: contain;
     object-position: center;
     display: block;
-    cursor: zoom-in;
 }
 
 .artwork-info {
