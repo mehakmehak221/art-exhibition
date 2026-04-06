@@ -1,6 +1,4 @@
-/* ===================================================
-   BEFORE THE SILENCE — Premium Gallery Design System
-   =================================================== */
+
 @import "tailwindcss";
 
 @theme inline {
@@ -549,7 +547,6 @@ a {
     }
 }
 
-/* ── SEARCH SECTION ─────────────────────────────────── */
 .search-container {
     margin-bottom: clamp(32px, 5vw, 64px);
     display: flex;
@@ -828,83 +825,49 @@ a {
     opacity: 0.7;
 }
 
-/* ── DETAIL PAGE ────────────────────────────────────── */
+
 .detail-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: calc(var(--nav-h) + 40px) clamp(16px, 5vw, 60px) 80px;
+    margin: 0;
+    padding: 0;
     min-height: 100svh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #fafaf9;
+    display: block;
 }
 
 .detail-card {
-    background: var(--bg-surface);
-    border: 1px solid var(--glass-border);
-    border-radius: 36px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    box-shadow: 0 40px 100px -30px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(32px);
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    transition: box-shadow 0.4s ease;
-}
-
-.detail-card:hover {
-    box-shadow: 0 60px 120px -30px rgba(0, 0, 0, 0.14);
+    opacity: 0;
 }
 
 .artwork-image-container {
     width: 100%;
-    aspect-ratio: 0.9;
-    background: #fafafa;
+    max-height: 90vh;
+    background: #f0ede8;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(20px, 4vw, 60px);
-    border-right: 1px solid #f0f0f3;
-    position: relative;
     overflow: hidden;
-}
-
-/* Subtle scanline texture on image bg */
-.artwork-image-container::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(0deg,
-            transparent,
-            transparent 2px,
-            rgba(0, 0, 0, 0.008) 2px,
-            rgba(0, 0, 0, 0.008) 4px);
-    pointer-events: none;
-    z-index: 0;
+    margin-top: var(--nav-h);
+    position: relative;
 }
 
 .artwork-image-container img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 90vh;
     object-fit: contain;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12), 0 0 0 8px #fff;
-    border-radius: 2px;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.8s var(--ease-expo);
-}
-
-.artwork-image-container img:hover {
-    transform: scale(1.02);
+    object-position: center;
+    display: block;
+    cursor: zoom-in;
 }
 
 .artwork-info {
-    padding: clamp(32px, 6vw, 80px) clamp(28px, 5vw, 72px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow-y: auto;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+    width: 100%;
 }
 
 .series-tag {
@@ -1050,12 +1013,10 @@ a {
     background: #2a2a2d;
 }
 
-/* ── RESPONSIVENESS ─────────────────────────────────── */
 
-/* 1280px – Large tablets / small laptops */
-@media (max-width: 1280px) {
-    .detail-card {
-        grid-template-columns: 1fr 1fr;
+@media (max-width: 768px) {
+    .artwork-image-container {
+        max-height: 60vh;
     }
 }
 
@@ -1073,20 +1034,6 @@ a {
     .artwork-grid {
         grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
         gap: clamp(16px, 2.5vw, 28px);
-    }
-}
-
-/* 900px – Stack detail card to single column */
-@media (max-width: 900px) {
-    .detail-card {
-        grid-template-columns: 1fr;
-        border-radius: 24px;
-    }
-
-    .artwork-image-container {
-        aspect-ratio: 1.2;
-        border-right: none;
-        border-bottom: 1px solid #f0f0f3;
     }
 
     .actions {
@@ -1167,13 +1114,11 @@ a {
     }
 
     .detail-container {
-        padding: calc(var(--nav-h) + 20px) 16px 48px;
-        align-items: flex-start;
+        padding: 0;
     }
 
-    .artwork-image-container {
-        aspect-ratio: 1.1;
-        padding: 20px;
+    .artwork-info {
+        padding: 2rem 1.25rem 4rem;
     }
 
     .artwork-title {
@@ -1233,7 +1178,7 @@ a {
     }
 
     .artwork-info {
-        padding: 28px 20px;
+        padding: 2rem 1rem 4rem;
     }
 
     .footer-brand h2 {

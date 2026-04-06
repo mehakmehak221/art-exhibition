@@ -86,7 +86,7 @@ export default function ArtworkCard({ item, index }: ArtworkCardProps) {
                         <span className="meta-value">#{item.id}</span>
                     </div>
                     <div className="meta-item">
-                        <span className="meta-label">Period</span>
+                        <span className="meta-label">Year</span>
                         <span className="meta-value">{item.year || '2025'}</span>
                     </div>
                 </div>
