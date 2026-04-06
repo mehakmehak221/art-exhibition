@@ -837,6 +837,7 @@ a {
     background: #ffffff;
     border-radius: 32px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
 }
 
 .artwork-image-container {
@@ -1013,7 +1014,7 @@ a {
 
 @media (max-width: 768px) {
     .artwork-image-container {
-        max-height: 60vh;
+        max-height: none;
     }
 }
 
@@ -1111,11 +1112,25 @@ a {
     }
 
     .detail-container {
+        padding: calc(var(--nav-h)) 0 0;
+    }
+
+    .detail-card {
+        border-radius: 0;
+        box-shadow: none;
         padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .artwork-image-container {
+        border-radius: 0;
+        margin-bottom: 0;
+        width: 100%;
     }
 
     .artwork-info {
-        padding: 2rem 1.25rem 4rem;
+        padding: 1.75rem 1.25rem 3rem;
     }
 
     .artwork-title {
@@ -1162,20 +1177,67 @@ a {
     }
 
     .detail-card {
-        border-radius: 20px;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
     }
 
     .artwork-image-container {
-        aspect-ratio: 1;
+        border-radius: 0;
+        margin-bottom: 0;
+        aspect-ratio: unset;
+        max-height: 65vw;
     }
 
-    .artwork-title {
-        font-size: 2rem;
-        margin-bottom: 24px;
+    .artwork-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
     .artwork-info {
-        padding: 2rem 1rem 4rem;
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    .series-tag {
+        margin-bottom: 14px;
+    }
+
+    .artwork-specs {
+        margin-bottom: 24px;
+    }
+
+    .spec-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 12px 0;
+    }
+
+    .spec-value {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .nav-controls {
+        padding: 6px 0 14px;
+    }
+
+    .btn-nav {
+        padding: 11px 16px;
+        font-size: 0.6rem;
+    }
+
+    .btn-nav span {
+        display: inline;
+    }
+
+    .btn-secondary {
+        padding: 16px 32px;
+        font-size: 0.65rem;
     }
 
     .footer-brand h2 {
