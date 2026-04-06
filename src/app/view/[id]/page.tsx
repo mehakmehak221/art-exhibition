@@ -120,7 +120,7 @@ export default function ArtworkDetail({ params: paramsPromise }: PageProps) {
 
                 <div className="artwork-info">
                     <span className="series-tag">{artwork.series || 'Art Portfolio'}</span>
-                    <h1 className="artwork-title">{artwork.title || 'Untitled'}</h1>
+                    {/* <h1 className="artwork-title">{artwork.title || 'Untitled'}</h1> */}
 
                     <div className="artwork-specs">
                         <div className="spec-row">
