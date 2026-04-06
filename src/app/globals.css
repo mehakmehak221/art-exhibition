@@ -820,7 +820,7 @@ a {
 
 .detail-container {
     margin: 0;
-    padding: calc(var(--nav-h) + 1rem) 0 0;
+    padding: calc(var(--nav-h) + 5rem) 0 5rem;
     min-height: 100svh;
     background: #fafaf9;
     display: block;
