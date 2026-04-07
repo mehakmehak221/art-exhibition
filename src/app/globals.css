@@ -1188,13 +1188,13 @@ a {
         border-radius: 0;
         margin-bottom: 1.5rem;
         aspect-ratio: unset;
-        max-height: 65vw;
+        max-height: none;
     }
 
     .artwork-image-container img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+        object-fit: contain;
         object-position: center;
     }
 
