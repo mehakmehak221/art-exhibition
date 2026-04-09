@@ -23,8 +23,6 @@ interface ArtworkCardProps {
 
 export default function ArtworkCard({ item, index }: ArtworkCardProps) {
     const cardRef = useRef<HTMLDivElement>(null);
-    const cleanTitle = (item.title || 'Untitled').replace(/[^a-z0-9]/gi, '_');
-    const qrPath = `/qrs/${item.id}_${cleanTitle}.png`;
 
     useEffect(() => {
         const card = cardRef.current;
@@ -73,9 +71,6 @@ export default function ArtworkCard({ item, index }: ArtworkCardProps) {
                         }}
                     />
                 </div>
-                <div className="qr-area">
-                    <img src={qrPath} alt="QR Code" />
-                </div>
             </div>
             <div className="card-info">
                 <span className="card-series">{item.series || 'Art Portfolio'}</span>
@@ -95,9 +90,6 @@ export default function ArtworkCard({ item, index }: ArtworkCardProps) {
                 <Link href={`/view/${item.id}`} className="btn-card btn-view">
                     Inquire / View
                 </Link>
-                <a href={qrPath} download={`${item.id}_${cleanTitle}.png`} className="btn-card btn-download">
-                    Export QR
-                </a>
             </div>
         </div>
     );

@@ -660,32 +660,6 @@ a {
     transition: transform 1s var(--ease-expo);
 }
 
-.qr-area {
-    position: absolute;
-    inset: 0;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    opacity: 0;
-    transition: opacity 0.5s var(--ease-expo), transform 0.5s var(--ease-expo);
-    transform: translateY(12px) scale(0.96);
-    border-radius: 16px;
-}
-
-.artwork-card:hover .qr-area {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-}
-
-.qr-area img {
-    width: 100%;
-    max-width: 220px;
-    object-fit: contain;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.06));
-}
-
 /* Card Content */
 .card-info {
     margin-bottom: 20px;
