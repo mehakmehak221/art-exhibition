@@ -32,9 +32,11 @@ async function generatePDF() {
         const stream = fs.createWriteStream(OUTPUT_PATH);
         doc.pipe(stream);
 
-        let pageNumber = 1;
         const itemsPerPage = 1; // 1 item per page
-        const qrSize = 108; // 1.5 inches in points (1 inch = 72 points)
+        const boxSize = 144; // 2 inches in points (1 inch = 72 points)
+        const qrSize = 115; // 1.6 inches - slightly smaller to fit name in 2x2 box
+        const pageWidth = 595.28; // A4 width in points
+        const pageHeight = 841.89; // A4 height in points
 
         for (let i = 0; i < artworks.length; i++) {
             const item = artworks[i];
@@ -44,11 +46,9 @@ async function generatePDF() {
                 doc.addPage();
             }
 
-            // Center QR code on page
-            const pageWidth = 595.28; // A4 width in points
-            const pageHeight = 841.89; // A4 height in points
-            const qrX = (pageWidth - qrSize) / 2;
-            const qrY = (pageHeight - qrSize) / 2 - 30; // Slightly above center to make room for name
+            // Center the 2x2 box on page
+            const boxX = (pageWidth - boxSize) / 2;
+            const boxY = (pageHeight - boxSize) / 2;
 
             // Check if QR code file exists
             const cleanTitle = (item.title || 'Untitled').replace(/[^a-z0-9]/gi, '_');
@@ -56,18 +56,20 @@ async function generatePDF() {
             const qrPath = path.join(__dirname, '..', QRS_DIR, qrFileName);
             const qrExists = fs.existsSync(qrPath);
 
-            // Draw QR code centered
+            // Draw QR code centered in the 2x2 box (at top portion)
+            const qrX = boxX + (boxSize - qrSize) / 2;
+            const qrY = boxY + 5;
             if (qrExists) {
                 doc.image(qrPath, qrX, qrY, { width: qrSize, height: qrSize });
             } else {
                 doc.rect(qrX, qrY, qrSize, qrSize).fill('#f3f4f6');
-                doc.fontSize(10).fillColor('#9ca3af').text('QR Not Found', qrX + 10, qrY + 45, { width: qrSize - 20, align: 'center' });
+                doc.fontSize(10).fillColor('#9ca3af').text('QR Not Found', qrX + 10, qrY + 50, { width: qrSize - 20, align: 'center' });
                 doc.fillColor('#000000');
             }
 
-            // Draw artwork name and serial number below QR code
+            // Draw artwork name and serial number at bottom of 2x2 box
             const normalizedTitle = normalizeText(item.title || 'Untitled');
-            doc.fontSize(16).font('Helvetica-Bold').fillColor('#000000').text(`#${item.id} - ${normalizedTitle}`, 40, qrY + qrSize + 30, { width: pageWidth - 80, align: 'center' });
+            doc.fontSize(11).font('Helvetica-Bold').fillColor('#000000').text(`#${item.id} - ${normalizedTitle}`, boxX, boxY + boxSize - 18, { width: boxSize, align: 'center' });
         }
 
         // Finalize PDF

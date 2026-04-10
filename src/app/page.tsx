@@ -174,7 +174,7 @@ export default function Home() {
                 <div className="container artist-content">
                     <div className="artist-text">
                         <span className="section-label">Featured Artist</span>
-                        <h2 className="section-title">DR. BHARAT THAKUR</h2>
+                        <h2 className="section-title">DR. BHARAT&nbsp;&nbsp;THAKUR</h2>
                         <div className="artist-bio">
                             <p>
                                 Dr. Bharat Thakur is a yoga master, founder of Artistic Yoga, and a self-taught 
